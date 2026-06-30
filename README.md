@@ -42,7 +42,7 @@ Pada tahap awal ini, sistem operasi Debian 13 diinstal ke dalam *virtual machine
 * **Pemasangan Bootloader GRUB:**
   Pada akhir instalasi, program *bootloader* GRUB diinstal pada *primary drive* (`/dev/sda`). Instalasi ke dalam *Master Boot Record* (MBR) ini sangat vital karena GRUB bertugas memuat inti sistem operasi (Kernel) sesaat setelah mesin dinyalakan. Setelah berhasil, sistem melakukan *reboot* dan menampilkan prompt *login* CLI (Command Line Interface).
   
-  ![Login Terminal](02-debian-login.png)
+  ![Login Terminal](02-debian-login.png.jpeg)
 
 ### 2. Konfigurasi User Sudo & Pembaruan Sistem (Update Repositori)
 Secara bawaan (*default*), instalasi Debian 13 versi minimal (mode teks) tidak menyertakan utilitas manajemen hak akses `sudo`. Sistem hanya mengandalkan satu akun *Superuser* (`root`) yang memiliki kendali absolut. Untuk alasan keamanan dan penerapan *Principle of Least Privilege* (prinsip hak akses minimal), pengoperasian server sehari-hari tidak disarankan menggunakan akun `root` secara langsung. Oleh karena itu, pendelegasian hak administratif kepada *user* biasa mutlak diperlukan.
