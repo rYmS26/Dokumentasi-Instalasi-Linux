@@ -37,7 +37,7 @@ Pada tahap awal ini, sistem operasi Debian 13 diinstal ke dalam *virtual machine
 * **Pemilihan Perangkat Lunak (Software Selection):**
   Ini adalah tahap paling krusial dalam menciptakan lingkungan *headless server*. Seluruh centang pada opsi *Debian desktop environment* dan *GNOME* dikosongkan agar sistem tidak terbebani paket visual. Tanda centang (*) hanya diaktifkan secara eksklusif untuk **SSH Server** (untuk kebutuhan akses *remote* jarak jauh) dan **standard system utilities** (untuk utilitas perintah dasar Linux).
   
-  ![Software Selection](01-software-selection.png)
+  ![Software Selection](01-software-selection.png.jpeg)
 
 * **Pemasangan Bootloader GRUB:**
   Pada akhir instalasi, program *bootloader* GRUB diinstal pada *primary drive* (`/dev/sda`). Instalasi ke dalam *Master Boot Record* (MBR) ini sangat vital karena GRUB bertugas memuat inti sistem operasi (Kernel) sesaat setelah mesin dinyalakan. Setelah berhasil, sistem melakukan *reboot* dan menampilkan prompt *login* CLI (Command Line Interface).
