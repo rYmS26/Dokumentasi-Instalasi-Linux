@@ -81,7 +81,7 @@ usermod -aG sudo kelompok1
 reboot
 ```
 * *[Tambahkan screenshot hasil uji coba perintah sudo oleh user biasa di bawah ini]*
-  ![Konfigurasi Sudo](images/02-sudo-config.png.jpeg) *(Catatan: sesuaikan nama file dengan screenshot Anda)*
+  ![Konfigurasi Sudo](image/02-sudo-config.png.jpeg) *(Catatan: sesuaikan nama file dengan screenshot Anda)*
 
 ### 3. Instalasi Web Server Nginx & Utilitas Jaringan Dasar
 Setelah hak akses *sudo* berhasil dikonfigurasi, langkah selanjutnya adalah mentransformasi *server* Debian yang masih kosong ini menjadi sebuah *web server* fungsional. Karena sistem diinstal dalam mode *headless* (tanpa GUI), instalasi paket harus dilakukan secara langsung melalui *Command Line Interface* (CLI). Praktikum ini menggunakan **Nginx** (dibaca: *Engine-X*), sebuah *web server* dan *reverse proxy* modern yang dikenal karena kecepatannya, stabilitasnya, serta konsumsi memori yang sangat rendah dibandingkan Apache.
@@ -113,7 +113,7 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
 * *[Tambahkan screenshot status active running dari Nginx]*
-  ![Nginx Service Status](images/03-nginx-status.png)
+  ![Nginx Service Status](image/03-nginx-status.png)
 
 ### 4. Pembuatan Halaman Web Profil Kelompok (Modifikasi Document Root)
 Secara bawaan (*default*), saat Nginx pertama kali terinstal dan dijalankan, peladen ini akan menyajikan sebuah halaman web statis bawaan yang bertuliskan "Welcome to nginx!". Berkas halaman awal ini secara standar berlokasi di dalam direktori sistem yang dikenal sebagai *Document Root*, lebih tepatnya pada *path* `/var/www/html/index.html`. Untuk memenuhi tujuan praktikum dan memberikan identitas pada server, halaman bawaan tersebut harus ditimpa dengan dokumen HTML orisinal yang memuat profil kelompok.
@@ -145,7 +145,7 @@ sudo nano /var/www/html/index.html
 sudo systemctl restart nginx
 ```
 * *[Tambahkan screenshot pengeditan index.html menggunakan nano editor]*
-  ![Edit index.html](images/04-edit-html.png)
+  ![Edit index.html](image/04-edit-html.png)
   
 ### 5. Konfigurasi Jaringan Tingkat Lanjut (NAT Port Forwarding) dan Verifikasi Akses
 Secara arsitektur, *virtual machine* (VM) Debian 13 beroperasi di dalam mode jaringan tersendiri yang disebut **NAT (Network Address Translation)** melalui antarmuka `VMnet8` milik VMware. Dalam mode ini, mesin Guest (Debian) berada di dalam sebuah sub-jaringan yang sepenuhnya terisolasi, sehingga mesin fisik Host (Windows/Linux utama) tidak dapat secara langsung mengakses *port* internal milik Guest dengan mengetikkan alamat IP internalnya di *browser*. 
