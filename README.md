@@ -81,7 +81,7 @@ usermod -aG sudo kelompok1
 reboot
 ```
 * *[Tambahkan screenshot hasil uji coba perintah sudo oleh user biasa di bawah ini]*
-  ![Konfigurasi Sudo](images/02-sudo-config.png) *(Catatan: sesuaikan nama file dengan screenshot Anda)*
+  ![Konfigurasi Sudo](images/02-sudo-config.png.jpeg) *(Catatan: sesuaikan nama file dengan screenshot Anda)*
 
 ### 3. Instalasi Web Server Nginx & Utilitas Jaringan Dasar
 Setelah hak akses *sudo* berhasil dikonfigurasi, langkah selanjutnya adalah mentransformasi *server* Debian yang masih kosong ini menjadi sebuah *web server* fungsional. Karena sistem diinstal dalam mode *headless* (tanpa GUI), instalasi paket harus dilakukan secara langsung melalui *Command Line Interface* (CLI). Praktikum ini menggunakan **Nginx** (dibaca: *Engine-X*), sebuah *web server* dan *reverse proxy* modern yang dikenal karena kecepatannya, stabilitasnya, serta konsumsi memori yang sangat rendah dibandingkan Apache.
