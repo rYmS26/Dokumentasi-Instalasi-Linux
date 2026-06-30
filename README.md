@@ -181,7 +181,7 @@ Untuk memecahkan masalah isolasi ini dan menyimulasikan bagaimana sebuah server 
   
   Keberhasilan memuat halaman situs ini membuktikan bahwa: 1) Proses instalasi OS Debian *headless* berjalan tanpa kecacatan, 2) Hak akses *sudo* dan utilitas jaringan dasar terkonfigurasi dengan semestinya, 3) *Web Server* Nginx berhasil berjalan stabil di latar belakang, dan 4) Konfigurasi translasi lalu lintas (NAT Port Forwarding) telah sukses memetakan *request* lintas arsitektur sistem operasi.
   
-  ![Akses Browser Host](06-browser-host.png)
+  ![Akses Browser Host](06-browser-host.png.jpeg)
 
 ## 🎥 Link Video Demo
 [Tonton Video Demo Pengerjaan Tugas Kelompok di YouTube / Google Drive](https://youtube.com/...)
