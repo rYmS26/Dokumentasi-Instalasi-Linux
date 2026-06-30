@@ -145,7 +145,7 @@ sudo nano /var/www/html/index.html
 sudo systemctl restart nginx
 ```
 * *[Tambahkan screenshot pengeditan index.html menggunakan nano editor]*
-  ![Edit index.html](image/04-edit-html.png)
+  ![Edit index.html](image/04-edit-html.png.jpeg)
   
 ### 5. Konfigurasi Jaringan Tingkat Lanjut (NAT Port Forwarding) dan Verifikasi Akses
 Secara arsitektur, *virtual machine* (VM) Debian 13 beroperasi di dalam mode jaringan tersendiri yang disebut **NAT (Network Address Translation)** melalui antarmuka `VMnet8` milik VMware. Dalam mode ini, mesin Guest (Debian) berada di dalam sebuah sub-jaringan yang sepenuhnya terisolasi, sehingga mesin fisik Host (Windows/Linux utama) tidak dapat secara langsung mengakses *port* internal milik Guest dengan mengetikkan alamat IP internalnya di *browser*. 
