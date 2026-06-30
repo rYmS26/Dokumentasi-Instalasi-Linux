@@ -113,7 +113,7 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
 * *[Tambahkan screenshot status active running dari Nginx]*
-  ![Nginx Service Status](image/03-nginx-status.png)
+  ![Nginx Service Status](image/03-nginx-status.png.jpeg)
 
 ### 4. Pembuatan Halaman Web Profil Kelompok (Modifikasi Document Root)
 Secara bawaan (*default*), saat Nginx pertama kali terinstal dan dijalankan, peladen ini akan menyajikan sebuah halaman web statis bawaan yang bertuliskan "Welcome to nginx!". Berkas halaman awal ini secara standar berlokasi di dalam direktori sistem yang dikenal sebagai *Document Root*, lebih tepatnya pada *path* `/var/www/html/index.html`. Untuk memenuhi tujuan praktikum dan memberikan identitas pada server, halaman bawaan tersebut harus ditimpa dengan dokumen HTML orisinal yang memuat profil kelompok.
