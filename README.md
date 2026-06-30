@@ -1,4 +1,4 @@
-readme_content = """# Laporan Tugas Kelompok: Instalasi Debian 13 Headless Web Server
+Laporan Tugas Kelompok: Instalasi Debian 13 Headless Web Server
 Mata Kuliah: Sistem Operasi (SI-25)
 Program Studi: Sistem Informasi, Universitas Galuh
      
