@@ -184,7 +184,7 @@ Untuk memecahkan masalah isolasi ini dan menyimulasikan bagaimana sebuah server 
   ![Akses Browser Host](06-browser-host.png.jpeg)
 
 ## 🎥 Link Video Demo
-[Tonton Video Demo Pengerjaan Tugas Kelompok di YouTube / Google Drive](https://youtube.com/...)
+[https://drive.google.com/file/d/1Ql5ug8z8EQ4LbnGHTsZ7bmvsXZTBtc6K/view]
 
 ## 📝 Kesimpulan
 
